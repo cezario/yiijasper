@@ -9,8 +9,9 @@ This extension provides access to show Jasper Reports in Yii from Jasper Server.
 
 Requirements:
 
-Yii Version 1.1.14
-Installed and working Jasper Server (Tested in Community v5.2.0)
+- Yii Version 1.1.14
+
+- Installed and working Jasper Server (Tested in Community v5.2.0)
 
 Installation:
 
