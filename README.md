@@ -26,14 +26,14 @@ You can import the extension where you use this or in the config main adding
 
 Then you need configure some parameters in JasperReport.php to communicate with your Jasper Server: 
 
-//Jasper server URL (Default Value)
-protected $baseUrl = 'http://localhost:8080/jasperserver/';
+	/* Jasper server URL (Default Value) */
+	protected $baseUrl = 'http://localhost:8080/jasperserver/';
 
-//Jasper server username (Default Value)
-protected $jusername = 'jasperadmin';
+	/* Jasper server username (Default Value) */
+	protected $jusername = 'jasperadmin';
 
-//Jasper server password (Default Value)
-protected $jpassword = 'jasperadmin';
+	/* Jasper server password (Default Value) */
+	protected $jpassword = 'jasperadmin';
 
 Examples for basic usage:
 
