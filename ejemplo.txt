@@ -1,0 +1,26 @@
+Suppose you have report with a query like that:
+
+select * from students where group = $P{group}
+
+And you want to show, all students in the group B:
+
+$re = new JasperReport('/reports/students', JasperReport::FORMAT_HTML, array(
+            'group' => 'B',
+        ));
+$re->exec();
+$html = $re->toHTML();;
+ 
+$this->render('groups', array(
+    'html' => $html,
+));
+
+JasperReport::FORMAT_HTML is the initial format, you can export later if is necesary.
+
+Here you show a widget with students in group C:
+
+$this->widget('JReportView', array(
+    'pathReport'=>'/reports/students',
+    'params' => array(
+        'group' => 'C',
+    )
+));
